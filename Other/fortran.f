@@ -11,7 +11,6 @@
 	  ELSE
 	    WRITE(*,*) i
 	  ENDIF
-10    CONTINUE
       ENDDO
 	  DO i = 1 , 100
 	    WRITE(*,*) "Enter a Number and Press Enter!"
@@ -25,6 +24,5 @@
 	  ELSE
 	    WRITE(*,*) i
 	  ENDIF
-25    CONTINUE
       ENDDO
       END
