@@ -1,6 +1,6 @@
 with Ada.Text_IO; use Ada.Text_IO;
 
-procedure Hello is
+procedure Bubble is
     type MY_ARRAY is array(1..10) of Integer;
     Data : MY_ARRAY;
 begin
@@ -15,4 +15,4 @@ begin
         Put("Number: ");
     end loop;
 
-end Hello;
+end Bubble;
