@@ -12,6 +12,7 @@
 	    WRITE(*,*) i
 	  ENDIF
       ENDDO
+      WRITE(*,*) "Not: Note: If you want to stop please press CTRL + Z"
 	  DO i = 1 , 100
 	    WRITE(*,*) "Enter a Number and Press Enter!"
 	  read(*,*),x
