@@ -12,7 +12,9 @@ begin
     end loop;
 
     for I in reverse MY_ARRAY'Range loop
-        Put("Number: ");
+        for J in MY_ARRAY'First .. I loop
+          Put("Number: ");
+        end loop;
     end loop;
 
 end Bubble;
