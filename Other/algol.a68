@@ -18,7 +18,7 @@ BEGIN
     print(("Note: If you want to stop please press CTRL + Z",new line));
 
     DO
-        print(("Input the number ",new line));
+        print(("Input Testing Number: ",new line));
         INT x := read int;
 
         IF x MOD 3 EQ 0 AND x MOD 5 EQ 0
