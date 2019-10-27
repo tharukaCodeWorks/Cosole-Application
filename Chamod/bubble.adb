@@ -4,8 +4,6 @@ use Ada.Text_IO;
 procedure Bubble is
     type MY_ARRAY is array(1..10) of Integer;
     Data : MY_ARRAY;
-    loop_count : Integer
-
 begin
     Put_Line("Please input the series 10 of numbers");
 
