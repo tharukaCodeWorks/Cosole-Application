@@ -14,9 +14,7 @@ PROGRAM FIZZBUZZ
       ENDIF
 
 10    CONTINUE
-    ENDDO
-
-    WRITE(*,*) "Note: If you want to stop please press CTRL + Z"
+      ENDDO
 	  DO i = 1 , 100
 	  WRITE(*,*) "Enter a Number and Press Enter!"
 	  read(*,*),x
