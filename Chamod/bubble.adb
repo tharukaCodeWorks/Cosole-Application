@@ -22,7 +22,7 @@ begin
 
     Put_Line("------ SORTED ARRAY ------");
     for I in 1..Data'Length loop
-      Put(Integer'Image(I));
+      Put(Integer'Image(Data(I)));
       New_Line(1);
     end loop;
 
