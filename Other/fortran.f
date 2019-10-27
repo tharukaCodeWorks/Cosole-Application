@@ -12,6 +12,8 @@ PROGRAM FIZZBUZZ
       ELSE
         WRITE(*,*) i
       ENDIF
+
+10    CONTINUE
     ENDDO
 
     WRITE(*,*) "Note: If you want to stop please press CTRL + Z"
