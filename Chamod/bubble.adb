@@ -20,4 +20,9 @@ begin
         end loop;
     end loop;
 
+    Put_Line("------ SORTED ARRAY ------");
+    for I in 1..Data'Length loop
+      Put_Line(Data(I));
+    end loop;
+
 end Bubble;
