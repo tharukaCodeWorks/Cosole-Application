@@ -22,7 +22,7 @@ begin
 
     Put_Line("------ SORTED ARRAY ------");
     for I in 1..Data'Length loop
-      Put_Line(Integer'I);
+      Put(I);
     end loop;
 
 end Bubble;
