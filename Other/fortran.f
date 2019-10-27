@@ -1,6 +1,5 @@
 
 PROGRAM FIZZBUZZ
-
 	  INTEGER i , x
 	  DO i = 1 , 100
 	  IF(MOD(i,15) . EQ . 0) THEN
