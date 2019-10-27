@@ -14,7 +14,7 @@
       ENDDO
       WRITE(*,*) "Not: Note: If you want to stop please press CTRL + Z"
 	  DO i = 1 , 100
-	    WRITE(*,*) "Enter a Number and Press Enter!"
+	    WRITE(*) "Enter a number for test: "
 	  read(*,*),x
 	  IF(MOD(x,15) . EQ . 0) THEN
 		  WRITE(*,*) "FizzBuzz"
