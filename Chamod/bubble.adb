@@ -22,7 +22,8 @@ begin
 
     Put_Line("------ SORTED ARRAY ------");
     for I in 1..Data'Length loop
-      Put(I & "");
+      Put(Integer'Image(I));
+      New_Line(1);
     end loop;
 
 end Bubble;
