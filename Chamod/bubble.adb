@@ -14,9 +14,11 @@ begin
 
     for I in reverse Data'Range loop
         for J in Data'First .. I loop
-          Temp := Data(J);
-          Data(J) := Data(I);
-          Data(I) := Temp;
+          if Data(I) < Data(J) then
+            Temp := Data(J);
+            Data(J) := Data(I);
+            Data(I) := Temp;
+          end if;
         end loop;
     end loop;
 
