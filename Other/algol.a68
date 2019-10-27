@@ -15,11 +15,16 @@ BEGIN
             FI
         OD;
 
+    print(("Note: If you want to stop please insert -1 as input number : ",new line));
     FOR i FROM 1 TO 100
         DO
-            print(("Input the number (ctrl +z to stop) : ",new line));
-            INT x := read int;     
-            IF x MOD 3 EQ 0 AND x MOD 5 EQ 0
+            print(("Input the number ",new line));
+            INT x := read int;
+            IF x EQ -1
+            THEN
+                print(("Thanks for testing",new line));
+                BREAK
+            ELIF x MOD 3 EQ 0 AND x MOD 5 EQ 0
             THEN
                 print(("Fizz Buzz",newline))
             ELIF x MOD 5 EQ 0
