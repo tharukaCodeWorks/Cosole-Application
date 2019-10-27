@@ -11,4 +11,4 @@ begin
     for I in 1..MY_ARRAY'Length loop
         Data(I) := Integer'Value(Get_Line);
     end loop;
-end Main;
+end Bubble;
