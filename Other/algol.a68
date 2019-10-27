@@ -1,40 +1,38 @@
 BEGIN
-    FOR i FROM 1 TO 100
+    FOR index FROM 1 TO 100
         DO
-            IF i MOD 3 EQ 0 AND i MOD 5 EQ 0
+            IF index MOD 3 EQ 0 AND index MOD 5 EQ 0
             THEN
                 print(("Fizz Buzz",newline))
-            ELIF i MOD 5 EQ 0
+            ELIF index MOD 5 EQ 0
             THEN
                 print(("Buzz",newline))
-            ELIF i MOD 3 EQ 0
+            ELIF index MOD 3 EQ 0
             THEN
                 print(("Fizz",newline))
             ELSE
-                print((i,newline))
+                print((index,newline))
             FI
         OD;
 
-    print(("Note: If you want to stop please insert -1 as input number : ",new line));
-    FOR i FROM 1 TO 100
-        DO
-            print(("Input the number ",new line));
-            INT x := read int;
-            IF x EQ -1
-            THEN
-                print(("Thanks for testing",new line));
-                BREAK
-            ELIF x MOD 3 EQ 0 AND x MOD 5 EQ 0
-            THEN
-                print(("Fizz Buzz",newline))
-            ELIF x MOD 5 EQ 0
-            THEN
-                print(("Buzz",newline))
-            ELIF x MOD 3 EQ 0
-            THEN
-                print(("Fizz",newline))
-            ELSE
-                print((x,newline))
-            FI
-        OD
+    print(("Note: If you want to stop please press CTRL + Z",new line));
+
+    DO
+        print(("Input the number ",new line));
+        INT x := read int;
+
+        IF x MOD 3 EQ 0 AND x MOD 5 EQ 0
+        THEN
+            print(("Fizz Buzz",newline))
+        ELIF x MOD 5 EQ 0
+        THEN
+            print(("Buzz",newline))
+        ELIF x MOD 3 EQ 0
+        THEN
+            print(("Fizz",newline))
+        ELSE
+            print((x,newline))
+        FI
+    OD
 END
+
