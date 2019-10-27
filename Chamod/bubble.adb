@@ -14,13 +14,7 @@ begin
     end loop;
 
     for I in reverse MY_ARRAY'Range loop
-       for J in MY_ARRAY'First .. I loop
-          if MY_ARRAY(I) < MY_ARRAY(J) then
-             Temp := MY_ARRAY(J);
-             MY_ARRAY(J) := MY_ARRAY(I);
-             MY_ARRAY(I) := Temp;
-          end if;
-       end loop;
+
     end loop;
 
 end Bubble;
