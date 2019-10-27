@@ -43,7 +43,7 @@ int main()
     cout << "\n\n--------- SORTED ARRAY --------- \n";
     int i;
     for (i = 0; i < sizeof(arr); i++)
-        cout <<"["<<arr[i].GetBookID() << "] "<<arr[i].GetBookName()<<" ,"<<arr[i].GetISBN()<<endl;
+        cout <<"["<<arr[i].GetBookID()<<endl;
     cout << "\n\n-------------------------------- \n";
     return 0;
 }
