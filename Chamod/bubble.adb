@@ -1,7 +1,7 @@
 with Ada.Text_IO;
 use Ada.Text_IO;
 
-procedure Main is
+procedure Bubble is
     type MY_ARRAY is array(1..9) of Integer;
     Data : MY_ARRAY;
 
