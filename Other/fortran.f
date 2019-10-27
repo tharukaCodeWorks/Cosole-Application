@@ -1,17 +1,16 @@
 
-PROGRAM FIZZBUZZ
+      PROGRAM FIZZBUZZ
 	  INTEGER i , x
 	  DO i = 1 , 100
 	  IF(MOD(i,15) . EQ . 0) THEN
-		  WRITE(*,*) "FizzBuzz"
+		WRITE(*,*) "FizzBuzz"
 	  ELSE IF(MOD(i,3) . EQ . 0) THEN
-		  WRITE(*,*) "Fizz"
+		WRITE(*,*) "Fizz"
 	  ELSE IF(MOD(i,5) . EQ . 0) THEN
-		  WRITE(*,*) "Buzz"
+		WRITE(*,*) "Buzz"
 	  ELSE
 	    WRITE(*,*) i
 	  ENDIF
-
 10    CONTINUE
       ENDDO
 c	  WRITE(*,*) "TESTING INITIALIZING..."
