@@ -1,20 +1,20 @@
 use strict;
 use File::Find;
 
-my @dir  = qw( / );
-my @files = _get_files(\@dir);
+my $file;
+my @directories  = qw( / );
+my @files = getFiles(\@directories,);
 
-sub _get_files{
+sub getFiles{
     my $dirs = shift;
-    my $what = shift;
     my @files;
     my $want = sub {
-        -f && /\Q\.conf\E$/ && push @files, $File::Find::name
+        -f && /\.conf\E$/ && push @files, $File::Find::name
     };
     find($want, @{$dirs});
     @files
 }
-my $file;
+
 foreach $file (@files) {
    print "$file\n";
 }
